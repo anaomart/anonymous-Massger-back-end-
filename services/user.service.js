@@ -10,7 +10,7 @@ cloudinary.config({
     api_key: '826488879423284',
     api_secret: '45NTb94cUlFiQaid2rHr31cV3bs'
 });
-let url = 'https://anonymous-massger-back-end.onrender.com'
+let url = 'https://anonymous-massger-front-end-fc8r-2dwjt5kv1-anaomart.vercel.app'
 
 function createToken(_id, expire) {
     return jwt.sign({ _id }, process.env.SECRET_KEY, { expiresIn: expire })
