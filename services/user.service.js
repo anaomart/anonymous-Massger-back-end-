@@ -10,7 +10,7 @@ cloudinary.config({
     api_key: '826488879423284',
     api_secret: '45NTb94cUlFiQaid2rHr31cV3bs'
 });
-let url = 'http://localhost:4000'
+let url = 'https://anonymous-massger-back-end.onrender.com'
 
 function createToken(_id, expire) {
     return jwt.sign({ _id }, process.env.SECRET_KEY, { expiresIn: expire })
