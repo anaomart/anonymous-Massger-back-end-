@@ -7,7 +7,9 @@ const PORT = 4000;
 const user = require('./api/user.api');
 const message = require('./api/messages.api');
 const { globalMiddleWare } = require('./util/globalMiddleware');
+const morgan = require('morgan');
 // middleware 
+app.use(morgan())
 app.use(cors());
 app.use(express.json());
 
