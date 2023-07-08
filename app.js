@@ -26,6 +26,8 @@ app.use((error, req, res, next) => {
     console.log(x);
     res.json({ error: x })
 })
-
+const keepAlive = setInterval(() => {
+    console.log({ TimeIs: Date.now() });
+}, 10 * 60 * 1000)
 
 app.listen(PORT, console.log("Listening on port: " + PORT))
